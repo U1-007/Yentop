@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="footer" style={{ background: '#111', color: '#a1a1a6', padding: '60px 5% 30px', marginTop: '50px' }}>
+    <footer className="footer" style={{ background: 'var(--bg-dark)', color: '#a1a1a6', padding: '60px 5% 30px', marginTop: 0, borderTop: '1px solid rgba(255,255,255,0.08)' }}>
       <div className="container" style={{ display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap', gap: '40px', marginBottom: '40px' }}>
         <div className="footer-brand">
           <h2 style={{ color: 'white', fontSize: '24px', letterSpacing: '-1px', marginBottom: '8px' }}>YENTOP</h2>

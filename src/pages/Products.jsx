@@ -22,7 +22,7 @@ export default function Products() {
       </Helmet>
 
       {/* Hero Section */}
-      <section style={{ minHeight: '70vh', display: 'flex', alignItems: 'center', justifyContent: 'center', textAlign: 'center', overflow: 'hidden', borderBottom: '1px solid rgba(255,255,255,0.05)', paddingTop: '80px' }}>
+      <section style={{ padding: '100px 0 60px', display: 'flex', alignItems: 'center', justifyContent: 'center', textAlign: 'center', overflow: 'hidden', borderBottom: '1px solid rgba(255,255,255,0.05)' }}>
         <div className="container">
           <motion.h1 
             initial={{ opacity: 0, y: 30 }}
@@ -46,17 +46,18 @@ export default function Products() {
       {allProducts.map((p, i) => {
         const isEven = i % 2 === 0;
         return (
-          <section key={i} style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', position: 'relative', overflow: 'hidden' }}>
+          <section key={i} style={{ padding: '60px 0', display: 'flex', alignItems: 'center', position: 'relative', overflow: 'hidden', borderBottom: i < allProducts.length - 1 ? '1px solid rgba(255,255,255,0.04)' : 'none' }}>
             <div style={{ 
               display: 'flex', 
               flexDirection: isEven ? 'row' : 'row-reverse',
               width: '100%', 
               height: '100%',
-              flexWrap: 'wrap'
+              flexWrap: 'wrap',
+              alignItems: 'center'
             }}>
               
               {/* Text Side */}
-              <div style={{ flex: '1 1 50%', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '10%', minWidth: '300px' }}>
+              <div style={{ flex: '1 1 50%', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '40px 5%', minWidth: '300px' }}>
                 <motion.div 
                   initial={{ opacity: 0, y: 50 }}
                   whileInView={{ opacity: 1, y: 0 }}
@@ -82,7 +83,7 @@ export default function Products() {
               </div>
 
               {/* Image Side */}
-              <div style={{ flex: '1 1 50%', minHeight: '380px', maxHeight: '100vh', minWidth: '300px', position: 'relative', overflow: 'hidden' }}>
+              <div style={{ flex: '1 1 50%', height: '420px', minWidth: '300px', position: 'relative', overflow: 'hidden' }}>
                 <motion.div
                   initial={{ scale: 1.2, opacity: 0 }}
                   whileInView={{ scale: 1, opacity: 1 }}

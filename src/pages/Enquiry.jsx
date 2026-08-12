@@ -97,9 +97,10 @@ export default function Enquiry() {
     <div
       style={{
         background: 'var(--bg-dark)',
-        minHeight: '100vh',
+        minHeight: 'calc(100vh - 70px)',
         display: 'flex',
         flexWrap: 'wrap',
+        alignItems: 'stretch',
       }}
     >
       <Helmet>
@@ -116,9 +117,8 @@ export default function Enquiry() {
         style={{
           flex: '1 1 50%',
           minWidth: '300px',
-          height: '100vh',
-          position: 'sticky',
-          top: 0,
+          minHeight: '500px',
+          position: 'relative',
           overflow: 'hidden',
         }}
       >
@@ -161,7 +161,7 @@ export default function Enquiry() {
         style={{
           flex: '1 1 50%',
           minWidth: '300px',
-          padding: '10% 5%',
+          padding: '60px 5%',
           display: 'flex',
           flexDirection: 'column',
           justifyContent: 'center',
