@@ -1,4 +1,4 @@
-# Yentop — Premium Edible Oils & Refining Technology
+# Yentop — Edible Oils & Refinery
 
 <p align="center">
   <img src="public/logo.png" alt="Yentop Logo" width="220" />
