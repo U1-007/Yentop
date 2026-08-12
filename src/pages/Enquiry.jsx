@@ -112,6 +112,7 @@ export default function Enquiry() {
 
       {/* Left Side: Cinematic Image */}
       <div
+        className="enquiry-media-panel"
         style={{
           flex: '1 1 50%',
           minWidth: '300px',

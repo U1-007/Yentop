@@ -44,7 +44,7 @@ export default function AboutUs() {
       </Helmet>
 
       {/* Background Breathing Image (Using plant interior image) */}
-      <div style={{ position: 'fixed', top: 0, left: 0, width: '100vw', height: '100vh', zIndex: -1, overflow: 'hidden' }}>
+      <div style={{ position: 'fixed', top: 0, left: 0, width: '100%', height: '100vh', zIndex: -1, overflow: 'hidden' }}>
         <div className="hero-bg-animated" style={{ width: '100%', height: '120%', background: 'linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.95)), url("/plant_interior.jpg") center/cover no-repeat' }}></div>
       </div>
 
@@ -54,7 +54,7 @@ export default function AboutUs() {
         </h1>
       </section>
 
-      <section className="sticky-about-section" style={{ position: 'relative', height: '100vh', width: '100vw' }}>
+      <section className="sticky-about-section" style={{ position: 'relative', height: '100vh', width: '100%' }}>
         <div style={{ position: 'relative', zIndex: 2, width: '100%', height: '100%', maxWidth: '900px', margin: '0 auto' }}>
           
           <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '0 20px', textAlign: 'center' }}>

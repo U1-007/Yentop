@@ -74,7 +74,7 @@ export default function Products() {
                   <motion.button 
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
-                    style={{ background: 'transparent', border: '1px solid rgba(255,255,255,0.2)', color: '#fff', padding: '15px 30px', borderRadius: '30px', fontSize: '16px', fontWeight: 600, cursor: 'none' }}
+                    style={{ background: 'transparent', border: '1px solid rgba(255,255,255,0.2)', color: '#fff', padding: '15px 30px', borderRadius: '30px', fontSize: '16px', fontWeight: 600, cursor: 'pointer' }}
                   >
                     Request Specifications
                   </motion.button>
@@ -82,7 +82,7 @@ export default function Products() {
               </div>
 
               {/* Image Side */}
-              <div style={{ flex: '1 1 50%', height: '100vh', minWidth: '300px', position: 'relative', overflow: 'hidden' }}>
+              <div style={{ flex: '1 1 50%', minHeight: '380px', maxHeight: '100vh', minWidth: '300px', position: 'relative', overflow: 'hidden' }}>
                 <motion.div
                   initial={{ scale: 1.2, opacity: 0 }}
                   whileInView={{ scale: 1, opacity: 1 }}
