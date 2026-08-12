@@ -4,9 +4,8 @@ import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
-import { Factory, ShoppingCart, PhoneCall, ChevronDown, Droplet, Settings, Activity, Navigation } from 'lucide-react';
+import { Factory, ShoppingCart, PhoneCall, ChevronDown, Settings, Activity, Navigation } from 'lucide-react';
 import { motion, useScroll, useVelocity, useTransform, useSpring } from 'framer-motion';
-import SpotlightCard from '../components/SpotlightCard';
 import TextReveal from '../components/TextReveal';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -194,7 +193,6 @@ export default function Home() {
                     whileInView={{ innerText: stat.value }}
                     viewport={{ once: true }}
                     transition={{ duration: 1.8, delay: i * 0.15, ease: 'easeOut' }}
-                    onUpdate={(latest) => {}}
                     style={{ fontSize: 'clamp(52px, 7vw, 88px)', fontWeight: 800, letterSpacing: '-0.04em', lineHeight: 1 }}
                     className="text-gold"
                   >

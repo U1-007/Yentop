@@ -52,8 +52,6 @@ export default function Contact() {
     };
   }, []);
 
-  const lineStyle = { borderTop: '1px solid rgba(255,255,255,0.1)', paddingTop: '40px', marginTop: '0' };
-
   return (
     <div style={{ position: 'relative', background: '#000', minHeight: '100vh', overflow: 'hidden' }}>
       <Helmet>
