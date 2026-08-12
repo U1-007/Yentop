@@ -145,7 +145,7 @@ function App() {
         <ScrollProgress />
         <ScrollToTop />
         <Header />
-        <main style={{ paddingTop: '70px', background: 'var(--bg-dark)', minHeight: 'calc(100vh - 70px)' }}>
+        <main style={{ paddingTop: '70px' }}>
           <ErrorBoundary>
             <AnimatedRoutes />
           </ErrorBoundary>
